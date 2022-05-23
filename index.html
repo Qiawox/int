@@ -15,6 +15,30 @@
       text
     </h1>
   </div>
+  <script src="jquery-3.6.0.min.js"></script>
   <script src="main.js"></script>
+  <!-- <script>
+    function init(){
+      console.log('init!');
+      if (localStorage['id']) {
+        console.log('isset id')
+        data = JSON.parse(localStorage['id']);
+        position = {};
+        position.top = data.top || 0;
+        position.left = data.left || 0;
+        $('#text').css({
+          top : postion.top, left : postion.left
+        })
+      }
+      $('.zone-1').draggable({
+        drag:function() {
+          localStorage['id'] = JSON.stringify({
+            'top' : $(this).offset().top,
+            'left' : $(this).offset().left,
+          });
+        }
+      })
+    }
+  </script> -->
 </body>
 </html>
