@@ -65,8 +65,7 @@ function drop1(event){
   //     getik = JSON.stringify({
   //     'top' : $(this).offset().top,
   //     'left' : $(this).offset().left,
-  //     })
-  //   }
+  //     })   }
   // })
   event.target.append(document.getElementById(itemId));
   // return getik ? JSON.parse(getik) : [];
